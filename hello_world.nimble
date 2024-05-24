@@ -10,4 +10,4 @@ description = "A simple Nimble package that prints 'Hello, World!'"
 requires "nim >= 1.0.0"
 
 # Main Nim file to be executed
-bin = @["hello_world.nim"]
+bin = @["hello_world"]
