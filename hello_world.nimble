@@ -24,4 +24,4 @@ task run:
 # Post Install Hook
 
 postInstall:
-  exec "nimble run"
+  exec "nimble run run"
