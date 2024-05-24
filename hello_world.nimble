@@ -12,12 +12,11 @@ bin           = @["hello_world"]
 requires "nim >= 1.2.6"
 
 # Tasks
-tasks:
-  "build":
-    command = "nim c -d:release -o:bin/hello_world src/hello_world.nim"
-    description = "Builds the hello_world executable"
 
-  "run":
-    command = "./bin/hello_world"
-    description = "Runs the hello_world executable"
+task build:
+  command = "nim c -d:release -o:bin/hello_world src/hello_world.nim"
+  description = "Builds the hello_world executable"
 
+task run:
+  command = "./bin/hello_world"
+  description = "Runs the hello_world executable"
