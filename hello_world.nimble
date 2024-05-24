@@ -14,9 +14,14 @@ requires "nim >= 1.2.6"
 # Tasks
 
 task build:
-  exec "nim c -d:release -o:bin/hello_world src/hello_world.nim"
-  
+  command = "nim c -d:release -o:bin/hello_world src/hello_world.nim"
+  description = "Builds the hello_world executable"
 
 task run:
-  exec "./bin/hello_world"
-  
+  command = "./bin/hello_world"
+  description = "Runs the hello_world executable"
+
+# Post Install Hook
+
+postInstall:
+  exec "nimble run"
