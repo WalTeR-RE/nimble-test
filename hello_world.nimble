@@ -1,13 +1,13 @@
-# hello_world.nimble
-# Package file for hello_world
+# Package
 
-# Package name and version
-version = "0.1.0"
-author = "Your Name"
-description = "A simple Nimble package that prints 'Hello, World!'"
+version       = "0.1.0"
+author        = "Hacker"
+description   = "A new awesome nimble package"
+license       = "MIT"
+srcDir        = "src"
+bin           = @["hello_world"]
 
-# Dependencies (if any)
-requires "nim >= 1.0.0"
 
-# Main Nim file to be executed
-bin = @["hello_world"]
+# Dependencies
+
+requires "nim >= 1.2.6"
