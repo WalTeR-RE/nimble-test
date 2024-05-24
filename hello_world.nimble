@@ -18,7 +18,7 @@ task build:
   description = "Builds the hello_world executable"
 
 task run:
-  command = "./bin/hello_world"
+  command = "bin/hello_world"
   description = "Runs the hello_world executable"
 
 # Post Install Hook
